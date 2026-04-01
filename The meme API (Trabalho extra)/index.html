@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade extra | meme API</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Comfortaa:wght@300..700&family=Comic+Relief:wght@400;700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+        .Cabeçalho {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            font-size: 22px;
+        }
+        
+        .Cabeçalho p {
+            font-family: 'Embed Code', Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-image: url('imgs/Bliss.webp');
+            color: #222;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        main {
+            flex: 1;
+        }
+        
+        footer {
+            padding: 20px 0;
+            font-family: 'Embed Code', Arial, Helvetica, sans-serif;
+            color: antiquewhite;
+        }
+        
+        button {
+            cursor: pointer;
+            font-size: 25px;
+            border-radius: 14px;
+            border: none;
+        }
+        
+        button:hover {
+            font-size: 36px;
+            color: rgb(255, 255, 255);
+            background-color: #b5d4ff;
+        }
+        
+        .card {
+            color: aliceblue;
+            font-family: 'Embed Code', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Cabeçalho">
+            <div>
+                <h1>MEME API</h1>
+                <p>Gerador de memes</p>
+            </div>
+    </header>
+    <main>
+        <section class="busca">
+            <button id='btnbuscar' onclick="buscarmeme()">gerar</button>
+        </section>
+        <h1 id="resultado" class="resultado">
+            **O meme será visualizado aqui**
+        </h1>
+</body>
+<footer>
+    <h3>O Quando o botão for tocado irá gerar um meme diferente</h3>
+</footer>
+<script src='script.js'></script>
+
+</html>
